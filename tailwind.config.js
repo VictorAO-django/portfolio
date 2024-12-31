@@ -12,6 +12,7 @@ export default {
         'xxxs': '350px'
       },
       backgroundColor: {
+        'custom-green': '#4caf50',
         'custom-blue': '#1d3b77',
         'custom-orange': '#f97450',
         'custom-orange-hover': '#e93200',
@@ -49,6 +50,12 @@ export default {
         'montserrat-medium': ['Montserrat-medium', 'sans-serif'],
         'montserrat-semi': ['Montserrat-semi', 'sans-serif'],
         'montserrat-black': ['Montserrat-black', 'sans-serif'],
+
+        'inter-thin': ['Inter-thin', 'sans-serif'],
+        'inter-regular': ['Inter-regular', 'sans-serif'],
+        'inter-medium': ['Inter-medium', 'sans-serif'],
+        'inter-semi': ['Inter-semi', 'sans-serif'],
+        'inter-black': ['Inter-black', 'sans-serif'],
       }
     },
   },
