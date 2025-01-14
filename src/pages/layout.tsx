@@ -23,10 +23,10 @@ const Layout: React.FC = () =>{
                     
                 </div>
                 <div className="flex items-center ml-auto">
-                    <NavLink to="/" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname == '/') && "border-gray-700"} border-white hover:border-gray-700`}>
+                    <NavLink to="/" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname !== '/') && "border-gray-700"} border-white hover:border-gray-700`}>
                         Home
                     </NavLink>
-                    <NavLink to="/" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname == 'resume') && "border-gray-700"} border-white hover:border-gray-700`}>
+                    <NavLink to="/resume" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname == 'resume') && "border-gray-700"} border-white hover:border-gray-700`}>
                         Resume
                     </NavLink>
                     <NavLink to="/" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname == 'portfolio') && "border-gray-700"} border-white hover:border-gray-700`}>
@@ -38,11 +38,11 @@ const Layout: React.FC = () =>{
                 </div>
             </div>
             
-            <div className="w-[75%] mx-auto">
+            <div className="w-[75%] mx-auto mb-16">
                 <Outlet />
             </div>
 
-            <div className="mt-14 flex justify-around bg-gray-100 p-8 absolute top-0 w-full">
+            <div className="mt-14 flex justify-around bg-gray-100 p-8 fixed bottom-0 w-full">
                 <p>
                     © 2024 Olusola Ayomide. All rights reserved
                 </p>

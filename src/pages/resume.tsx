@@ -1,32 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-function Home(){
-
-    type TestimonialType = {content: string; name: string; position: string}[]
-    const [testimonial, setTestimonial] = useState<TestimonialType>(
-        [
-            {
-                content: "To make a long story short, I was impressed to see how nicely and efficiently, Techne Coding’s, app works for Queen City Bookstore. It has allowed us to grow our business in ways I never had imagined. I highly recommend this company over many in Western New York.",
-                name: "Queen City Bookstore, Inc",
-                position: "Andrew Wood"
-            },
-            {
-                content: "To make a long story short, I was impressed to see how nicely and efficiently, Techne Coding’s, app works for Queen City Bookstore. It has allowed us to grow our business in ways I never had imagined. I highly recommend this company over many in Western New York.",
-                name: "Rendr",
-                position: "CEO Emil Novak"
-            },
-            {
-                content: "To make a long story short, I was impressed to see how nicely and efficiently, Techne Coding’s, app works for Queen City Bookstore. It has allowed us to grow our business in ways I never had imagined. I highly recommend this company over many in Western New York.",
-                name: "Avocados and Coconuts",
-                position: "CEO Startup"
-            },
-            {
-                content: "After using previous developers for my app, Chromatic, we were looking for someone trustworthy and knowledgable to enhance the platform. With Rob’s help we were able to reduce the maintenance risk, add unique features and assess key areas of growth for the app. I was pleasantly surprised at the integrity, professionalism and down to earth explanations Rob gave to help us make critical decisions for the app. The quality was so good we ended up scrapping most of our initial version and rebuilding it from the ground up with him.  So if you’re looking for a top-shelf developer I highly recommend Rob for your next app project.",
-                name: "Chromatic",
-                position: "Deva Finger"
-            },
-        ]
-    )
+function Resume(){
 
     return(
         <div className="w-full mt-20 flex flex-col items-center pb-16">
@@ -120,38 +94,8 @@ function Home(){
                 </div>
             </div>
 
-            <div
-            className="mt-16 flex flex-col items-center"
-            >
-                <p className="flex text-[25px] font-inter-medium text-gray-700 mb-5">
-                    Testimonials
-                </p>
-                <div 
-                className="grid grid-cols-2 gap-6"
-                >
-                    {testimonial.map((item, _) => (
-                        <div 
-                        className="border-gray-300 rounded-xl p-6 flex flex-col items-start justify-between min-h-80 border shadow-sm"
-                        key={_}
-                        >
-                            <p className="text-start text-gray-600 text-[16px]">
-                                "{item.content}"
-                            </p>
-
-                            <div className="flex flex-col items-start">
-                                <p className="mt-10 font-inter-medium text-[17px]">
-                                    {item.name}
-                                </p>
-                                <p className="text-gray-600 text-[16px]">
-                                    {item.position}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
         </div>
     );
 };
 
-export default Home;
+export default Resume;
