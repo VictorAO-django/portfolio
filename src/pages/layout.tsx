@@ -29,10 +29,10 @@ const Layout: React.FC = () =>{
                     <NavLink to="/resume" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname == 'resume') && "border-gray-700"} border-white hover:border-gray-700`}>
                         Resume
                     </NavLink>
-                    <NavLink to="/" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname == 'portfolio') && "border-gray-700"} border-white hover:border-gray-700`}>
+                    <NavLink to="/portfolio" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname == 'portfolio') && "border-gray-700"} border-white hover:border-gray-700`}>
                         Portfolio
                     </NavLink>
-                    <NavLink to="/" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname == 'contact') && "border-gray-700"} border-white hover:border-gray-700`}>
+                    <NavLink to="/contact" className={`text-[15px] text-gray-700 font-inter-regular px-4 py-2 border-b-[3.5px] ${(pathname == 'contact') && "border-gray-700"} border-white hover:border-gray-700`}>
                         Contact
                     </NavLink>
                 </div>

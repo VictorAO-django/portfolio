@@ -1,6 +1,28 @@
-// import { useState } from "react";
+import { useState } from "react";
+import ProgressBar from "../components/ProgressBar";
 
 function Resume(){
+    type TestimonialType = {title: string; items: string[]}[]
+    const [tools, setTools] = useState<TestimonialType>(
+        [
+            {
+                title: "Mobile App",
+                items: ['React Native', 'Expo React Native', 'XCode', 'Android Studio Code', 'App Store', 'Google Play Store']
+            },
+            {
+                title: "Web/Backend",
+                items: ['Python', 'Django', 'Django Rest Framework', 'PostgreSQL', 'RESTful API Design', 'React Vite', 'HTML', 'CSS', 'Javascript', 'Tailwind css']
+            },
+            {
+                title: "Devops",
+                items: ['Ubuntu Linux', 'Cloud Panel', 'Digital Ocean', 'AWS',]
+            },
+            {
+                title: "Other",
+                items: ['Git', 'Github', 'Postman', 'VScode', 'Clickup', 'Redis', 'RabbitMQ']
+            },
+        ]
+    )
 
     return(
         <div className="w-full mt-16 flex flex-col items-start pb-16">
@@ -285,31 +307,78 @@ function Resume(){
                 Skills
             </p>
             <div className="w-full mt-4 space-y-3">
-                <div className="flex justify-between w-full pl-5">
+                <div className="flex justify-between w-full pl-5 items-center">
                     <p className="font-inter-regulari m-0 text-[18px] text-gray-700">
                         Backend Development
                     </p>
-                    <meter value="0.85" min="0" max="1" >
-                    </meter>
+                    <div className="w-[50%]">
+                        <ProgressBar progress={95} color="bg-blue-600" />
+                    </div>
                 </div>
-                <div className="flex justify-between w-full pl-5">
+                <div className="flex justify-between w-full pl-5 items-center">
                     <p className="font-inter-regulari m-0 text-[18px] text-gray-700">
                         Frontend Development
                     </p>
-                    <meter value="0.6" min="0" max="1"></meter>
+                    <div className="w-[50%]">
+                        <ProgressBar progress={70} color="bg-blue-600" />
+                    </div>
                 </div>
-                <div className="flex justify-between w-full pl-5">
+                <div className="flex justify-between w-full pl-5 items-center">
                     <p className="font-inter-regulari m-0 text-[18px] text-gray-700">
                         Mobile App Development
                     </p>
-                    <meter value="0.6" min="0" max="1"></meter>
+                    <div className="w-[50%]">
+                        <ProgressBar progress={70} color="bg-blue-600" />
+                    </div>
                 </div>
-                <div className="flex justify-between w-full pl-5">
+                <div className="flex justify-between w-full pl-5 items-center">
                     <p className="font-inter-regulari m-0 text-[18px] text-gray-700">
                         Devops
                     </p>
-                    <meter value="0.6" min="0" max="1"></meter>
+                    <div className="w-[50%]">
+                        <ProgressBar progress={30} color="bg-blue-600" />
+                    </div>
                 </div>
+            </div>
+
+
+
+
+            <p className="flex text-[28px] font-inter-medium text-gray-700 mt-24 bg-gray-100 w-full px-2">
+                All Tools
+            </p>
+            <div className="space-y-5 mt-5 pl-5">
+                {tools.map((item, _) => (
+                    <div 
+                    className=""
+                    key={_}
+                    >
+                        <p className="font-inter-semi text-start text-gray-800 text-[20px]">
+                            {item.title}
+                        </p>
+                        <div className="flex flex-row space-x-2 flex-wrap mt-2">
+                            {item.items.map((sub_item, _) => (
+                                <p key={_} className="rounded-lg bg-gray-200 px-2 text-gray-700 font-montserrat-regular text-[14px]">
+                                    {sub_item}
+                                </p>
+                            ))}
+                        </div>
+                        
+                    </div>
+                ))}
+            </div>
+
+
+
+
+            <div className="flex items-center justify-around mt-28 mb-10 space-x-4">
+                <a className="bg-gray-700 flex items-center py-2 px-2 rounded-lg text-white font-inter-regular" href="">
+                    Let's talk
+                    <img className="w-5 h-5 ml-2" src="/send.png" alt="send" />
+                </a>
+                <a className="border border-gray-700 flex items-center py-2 px-2 rounded-lg text-gray-700 font-inter-regular" href="">
+                    View my work
+                </a>
             </div>
         </div>
     );

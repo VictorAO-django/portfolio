@@ -97,7 +97,7 @@ function Home(){
 
                     <a 
                     className="font-inter-medium text-sm text-start text-blue-500 mt-8" 
-                    href=""
+                    href="/resume"
                     >
                         View my full resume 
                     </a>
