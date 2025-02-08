@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Resume from './pages/resume';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
+import Project from './pages/project';
 import './index.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='resume' element={<Resume />} />
           <Route path='portfolio' element={<Portfolio />} />
+          <Route path='portfolio/:project' element={<Project />} />
           <Route path='contact' element={<Contact />} />
         </Route>
         <Route path='*' element={<NotFound />} />

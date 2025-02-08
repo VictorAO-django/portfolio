@@ -372,11 +372,11 @@ function Resume(){
 
 
             <div className="flex items-center justify-around mt-28 mb-10 space-x-4">
-                <a className="bg-gray-700 flex items-center py-2 px-2 rounded-lg text-white font-inter-regular" href="">
+                <a className="bg-gray-700 hover:bg-gray-500 flex items-center py-2 px-2 rounded-lg text-white font-inter-regular" href="">
                     Let's talk
                     <img className="w-5 h-5 ml-2" src="/send.png" alt="send" />
                 </a>
-                <a className="border border-gray-700 flex items-center py-2 px-2 rounded-lg text-gray-700 font-inter-regular" href="">
+                <a className="border border-gray-700 hover:bg-gray-500 flex items-center py-2 px-2 rounded-lg text-gray-700 font-inter-regular" href="">
                     View my work
                 </a>
             </div>

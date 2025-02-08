@@ -48,13 +48,22 @@ const Layout: React.FC = () =>{
                 </p>
                 <div className="flex space-x-3">
                     <p className="">Get in touch:</p>
-                    <a className="flex items-center justify-around bg-gray-800 rounded-full w-7 h-7">
+                    <a 
+                    href="https://github.com/VictorAO-django"
+                    target="_blank"
+                    className="flex items-center justify-around bg-gray-800 rounded-full w-7 h-7">
                         <img className="w-4 h-4" src="/github.png" alt="github" />
                     </a>
-                    <a className="flex items-center justify-around bg-gray-800 rounded-full w-7 h-7">
+                    <a 
+                    href="https://www.linkedin.com/in/victor-olusola-a59493276"
+                    target="_blank"
+                    className="flex items-center justify-around bg-gray-800 rounded-full w-7 h-7">
                         <img className="w-3 h-3" src="/linkedin-logo.png" alt="linkedin" />
                     </a>
-                    <a className="flex items-center justify-around bg-gray-800 rounded-full w-7 h-7">
+                    <a 
+                    href="https://discordapp.com/users/victorao_51904"
+                    target="_blank"
+                    className="flex items-center justify-around bg-gray-800 rounded-full w-7 h-7">
                         <img className="w-4 h-4" src="/discord.png" alt="discord" />
                     </a>
                     

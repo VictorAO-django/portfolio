@@ -47,7 +47,7 @@ function Portfolio(){
                     key={_}
                     >   
                         <div className="flex flex-row items-center w-full">
-                            <div className="w-36 h-36 overflow-hidden border rounded-2xl">
+                            <div className="w-40 h-40 overflow-hidden border rounded-3xl">
                                 <img src={item.avatar} alt="" />
                             </div>
                             <div className="ml-3">
@@ -59,7 +59,7 @@ function Portfolio(){
                                 </p>
                                 <div className="flex flex-row space-x-2 flex-wrap mt-5">
                                     {item.tags.map((sub_item, _) => (
-                                        <p key={_} className="rounded-lg bg-gray-200 px-2 text-gray-700 font-montserrat-regular text-[14px]">
+                                        <p key={_} className="rounded-lg bg-gray-200 py-1 px-2 text-gray-700 font-montserrat-regular text-[14px]">
                                             {sub_item}
                                         </p>
                                     ))}
