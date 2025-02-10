@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { useParams } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaMobileScreen } from "react-icons/fa6";
 import { BsGlobe } from "react-icons/bs";
 import { PiFileHtmlFill } from "react-icons/pi";
 import { FaCss3 } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiDjango, SiPython, SiPostgresql, SiAndroid, SiApple, SiDigitalocean, SiIcloud, SiWebex, SiTmobile  } from 'react-icons/si';
+import { SiDjango, SiPython, SiPostgresql, SiDigitalocean, SiIcloud, } from 'react-icons/si';
 
 type Tools = {
     image: any,
@@ -82,14 +80,14 @@ const Project: React.FC = () => {
                             {image: SiDigitalocean, name: 'Digital Ocean'},
                         ]
                     },
-                    {image: BsGlobe, name: 'Web', tools: [
-                            {image: PiFileHtmlFill, name: 'HTML'},
-                            {image: FaCss3, name: 'CSS'},
-                            {image: IoLogoJavascript, name: 'Javascript'},
-                            {image: RiReactjsLine, name: 'ReactJS'},
-                            // {image: SiPython, name: 'Digital Ocean'},
-                        ]
-                    },
+                    // {image: BsGlobe, name: 'Web', tools: [
+                    //         {image: PiFileHtmlFill, name: 'HTML'},
+                    //         {image: FaCss3, name: 'CSS'},
+                    //         {image: IoLogoJavascript, name: 'Javascript'},
+                    //         {image: RiReactjsLine, name: 'ReactJS'},
+                    //         // {image: SiPython, name: 'Digital Ocean'},
+                    //     ]
+                    // },
                     // {image: FaMobileScreen, name: 'Mobile', tools: [
                     //         {image: SiPython, name: 'Python'},
                     //         {image: SiPython, name: 'Django'},
@@ -154,6 +152,15 @@ const Project: React.FC = () => {
     )
 
     const PROJECT = projects.find(project => project.slug === slug);
+
+    type HoverProp = {
+        id: string,
+        name: string;
+    };
+    const [hovered, setHovered] = useState<HoverProp>({
+        id: '',
+        name: ''
+    })
 
     return(
         <div className="w-full mt-16 flex flex-col items-start pb-16">
@@ -234,14 +241,32 @@ const Project: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="py-8 mt-8 border-t border-gray-200">
+                <div className="py-8 mt-14 border-t border-gray-200">
                     <p className="font-inter-medium text-start pt-0 text-gray-900 text-[28px]">
                         See Other Projects
                     </p>
                     <div className="flex flex-row space-x-3 justify-start mt-10">
                         {projects.map((item, _) => (
-                            <a href={`/portfolio/${item.slug}`} key={_} className="flex flex-row items-center">
-                                <div className="w-40 h-40 overflow-hidden border rounded-3xl">
+                            <a 
+                            href={`/portfolio/${item.slug}`} 
+                            key={_} 
+                            onMouseOver={()=>{setHovered({id: item.slug, name: item.title})}}  
+                            onMouseOut={()=>{setHovered({id: '', name: ''})}}
+                            className="relative flex flex-row items-center overflow-hidden w-40 h-40 rounded-3xl">
+                                {/* {(hovered.id == item.slug) && ( */}
+                                    <div
+                                    className={`absolute top-0 left-0 right-0 bottom-0 bg-gray-600 transition-all duration-500 ease-in-out transform flex items-center justify-around ${
+                                        (hovered.id == item.slug) ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+                                    }`}
+                                    >
+                                        <span
+                                        className="text-white font-montserrat-Regular text-[17px]"
+                                        >
+                                        {item.title}
+                                    </span>
+                                    </div>
+                                {/* )} */}
+                                <div className="w-40 h-40 overflow-hidden border">
                                     <img src={item.avatar} alt="" />
                                 </div>  
                             </a>

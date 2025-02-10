@@ -46,11 +46,11 @@ function Home(){
             </div>
 
             <div className="flex items-center justify-around mt-8 space-x-4">
-                <a className="bg-gray-700 hover:bg-gray-500 flex items-center py-2 px-2 rounded-lg text-white font-inter-regular" href="">
+                <a className="bg-gray-700 hover:bg-gray-500 flex items-center py-2 px-2 rounded-lg text-white font-inter-regular" href="/contact">
                     Let's talk
                     <img className="w-5 h-5 ml-2" src="/send.png" alt="send" />
                 </a>
-                <a className="border border-gray-700 hover:bg-gray-500 flex items-center py-2 px-2 rounded-lg text-gray-700 font-inter-regular" href="">
+                <a className="border border-gray-700 flex items-center py-2 px-2 rounded-lg text-gray-700 font-inter-regular" href="/portfolio">
                     View my work
                 </a>
             </div>
@@ -61,10 +61,10 @@ function Home(){
                     About me
                     </p>
                     <p className="font-inter-regular text-start text-gray-600 mt-2">
-                    As a self taught programmer I learned the trade after graduating with a degree in Electrical Engineering. Within one year of graduating I had completed my first client app, created a side-startup company and landed a software development job.
+                    As a self taught programmer I learned the trade while studying for a degree in Computer Engineering. During my years of study I had completed my first client project, landed a software development job.
                     </p>
                     <p className="font-inter-regular text-start text-gray-600 mt-2">
-                    Over those years I fell in love with iOS development and started offering my skills as a contractor. I now work as a contractor full time expertly crafting the next generation of iOS apps.
+                    Over those years I fell in love with Backend & Frontend development and started offering my skills as a contractor and as a part-time worker. I am open to work as a contractor to expertly craft the next generation of Web and Mobile apps.
                     </p>
                 </div>
 
@@ -92,7 +92,7 @@ function Home(){
                     Expert Advice
                     </p>
                     <p className="font-inter-regular text-start text-gray-600 mt-2">
-                    With over a decade of practical knowledge and experience I am your on hand expert to answer your questions. From industry standards, technical possibilities to code reviews my knowledge can be used to help make your project more successful.
+                    With over 4 years of practical knowledge and experience I am your on hand expert to answer your questions. From industry standards, technical possibilities to code reviews my knowledge can be used to help make your project more successful.
                     </p>
 
                     <a 
@@ -113,7 +113,8 @@ function Home(){
 
                     <a 
                     className="font-inter-medium text-sm text-start text-blue-500 mt-8" 
-                    href=""
+                    href="https://www.linkedin.com/in/victor-olusola-a59493276"
+                    target="_blank"
                     >
                         Check me out on LinkenIn
                     </a>
