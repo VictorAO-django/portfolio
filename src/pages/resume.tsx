@@ -3,7 +3,7 @@ import ProgressBar from "../components/ProgressBar";
 
 function Resume(){
     type TestimonialType = {title: string; items: string[]}[]
-    const [tools, setTools] = useState<TestimonialType>()
+    const [tools, setTools] = useState<TestimonialType>([])
 
     setTools(
         [

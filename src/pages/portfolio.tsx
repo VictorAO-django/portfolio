@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Portfolio(){
     type TestimonialType = {title: string; type: string, avatar: string, slug: string, tags: string[]}[]
-    const [projects, setProjects] = useState<TestimonialType>()
+    const [projects, setProjects] = useState<TestimonialType>([])
 
     setProjects(
         [

@@ -3,7 +3,7 @@ import { useState } from "react";
 function Home(){
 
     type TestimonialType = {content: string; name: string; position: string}[]
-    const [testimonial, setTestimonial] = useState<TestimonialType>()
+    const [testimonial, setTestimonial] = useState<TestimonialType>([])
 
     setTestimonial(
         [
