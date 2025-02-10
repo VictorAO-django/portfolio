@@ -2,7 +2,9 @@ import { useState } from "react";
 
 function Portfolio(){
     type TestimonialType = {title: string; type: string, avatar: string, slug: string, tags: string[]}[]
-    const [projects, setProjects] = useState<TestimonialType>(
+    const [projects, setProjects] = useState<TestimonialType>()
+
+    setProjects(
         [
             {
                 title: "Babyducts",
@@ -27,7 +29,6 @@ function Portfolio(){
             },
         ]
     )
-
     return(
         <div className="w-full mt-16 flex flex-col items-start pb-16">
             <div className="flex flex-col items-start">
