@@ -3,7 +3,9 @@ import ProgressBar from "../components/ProgressBar";
 
 function Resume(){
     type TestimonialType = {title: string; items: string[]}[]
-    const [tools, setTools] = useState<TestimonialType>(
+    const [tools, setTools] = useState<TestimonialType>()
+
+    setTools(
         [
             {
                 title: "Mobile App",
@@ -23,7 +25,6 @@ function Resume(){
             },
         ]
     )
-
     return(
         <div className="w-full mt-16 flex flex-col items-start pb-16">
             <div className="flex flex-col items-start">
