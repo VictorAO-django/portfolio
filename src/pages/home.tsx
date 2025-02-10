@@ -3,9 +3,7 @@ import { useState } from "react";
 function Home(){
 
     type TestimonialType = {content: string; name: string; position: string}[]
-    const [testimonial, setTestimonial] = useState<TestimonialType>([])
-
-    setTestimonial(
+    const [testimonial] = useState<TestimonialType>(
         [
             {
                 content: "To make a long story short, I was impressed to see how nicely and efficiently, Techne Coding’s, app works for Queen City Bookstore. It has allowed us to grow our business in ways I never had imagined. I highly recommend this company over many in Western New York.",
@@ -29,6 +27,7 @@ function Home(){
             },
         ]
     )
+
     return(
         <div className="w-full mt-20 flex flex-col items-center pb-16">
             <div className="w-40 h-40 flex items-center rounded-full overflow-hidden mx-auto">

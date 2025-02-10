@@ -59,9 +59,7 @@ const Project: React.FC = () => {
     const slug = params.project;
 
     type TestimonialType = {title: string; type: string, avatar: string, slug: string, overview: string, role: string, features: string[], responsibilities: string[], tags: string[], technical_details: DetailProp[]}[]
-    const [projects, setProjects] = useState<TestimonialType>([])
-
-    setProjects(
+    const [projects] = useState<TestimonialType>(
         [
             {
                 title: "Babyducts",
@@ -152,6 +150,7 @@ const Project: React.FC = () => {
             },
         ]
     )
+
     const PROJECT = projects.find(project => project.slug === slug);
 
     type HoverProp = {
