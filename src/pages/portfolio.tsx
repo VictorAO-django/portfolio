@@ -7,24 +7,24 @@ function Portfolio(){
             {
                 title: "Babyducts",
                 type: "Ecommerce Website",
-                avatar: "https://res.cloudinary.com/dpbxwwfym/image/upload/v1733944453/babyduct_logo_uztd6c.png",
+                avatar: "https://res.cloudinary.com/dlzg7ubrs/image/upload/v1740565626/Babyduct_logo_xymmwo.jpg",
                 slug: "babyducts-ecommerce-website",
                 tags: ['Fin Tech', 'Ecommerce']
             },
             {
                 title: "Naliss Tasued",
                 type: "Voting Platform",
-                avatar: "https://res.cloudinary.com/dpbxwwfym/image/upload/v1733944453/babyduct_logo_uztd6c.png",
+                avatar: "https://res.cloudinary.com/dlzg7ubrs/image/upload/v1740565301/Naliss_Logo_ygf7tw.jpg",
                 slug: "naliss-tasued-website",
                 tags: ['Voting', 'School']
             },
-            {
-                title: "Tradewize",
-                type: "IBKR Trading",
-                avatar: "https://res.cloudinary.com/dpbxwwfym/image/upload/v1733944453/babyduct_logo_uztd6c.png",
-                slug: "tradewize-trading-website",
-                tags: ['Trading', 'Brokers',]
-            },
+            // {
+            //     title: "Tradewize",
+            //     type: "IBKR Trading",
+            //     avatar: "https://res.cloudinary.com/dpbxwwfym/image/upload/v1733944453/babyduct_logo_uztd6c.png",
+            //     slug: "tradewize-trading-website",
+            //     tags: ['Trading', 'Brokers',]
+            // },
         ]
     )
 

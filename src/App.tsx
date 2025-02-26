@@ -1,5 +1,5 @@
 import { BrowserRouter  as Router, Routes, Route} from 'react-router-dom';
-import NotFound from './pages/not_found';
+import PageNotFound from './pages/not_found';
 import './App.css'
 import Layout from './pages/layout';
 import Home from './pages/home';
@@ -20,7 +20,7 @@ function App() {
           <Route path='portfolio/:project' element={<Project />} />
           <Route path='contact' element={<Contact />} />
         </Route>
-        <Route path='*' element={<NotFound />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
     </Router>
   )

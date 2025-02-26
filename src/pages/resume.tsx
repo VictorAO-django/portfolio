@@ -83,7 +83,7 @@ function Resume(){
 
                             <a 
                             className="font-inter-medium text-sm text-start text-blue-500 mt-8" 
-                            href="https://babyducts.com"
+                            href="https://babyducts-buyer.vercel.app/"
                             target="_blank"
                             >
                                 https://babyducts.com
@@ -199,7 +199,7 @@ function Resume(){
                                         Pickeat (Remote) – Lagos NG
                                     </p>
                                     <p className="font-inter-medium m-0 text-[18px] text-gray-500">
-                                        Full-Stack Developer
+                                        Mobile App Developer
                                     </p>
                                 </div>
                                 <p className="font-inter-medium m-0 text-gray-500">
@@ -233,7 +233,7 @@ function Resume(){
 
 
 
-                    <div className="border-b border-gray-300 pb-5 mt-5">
+                    {/* <div className="border-b border-gray-300 pb-5 mt-5">
                         <div className="flex flex-col items-start">
                             <div className="flex flex-row items-center justify-between w-full mt-5">
                                 <div className="flex flex-col items-start">
@@ -271,7 +271,7 @@ function Resume(){
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
@@ -336,7 +336,7 @@ function Resume(){
                         Devops
                     </p>
                     <div className="w-[50%]">
-                        <ProgressBar progress={30} color="bg-blue-600" />
+                        <ProgressBar progress={50} color="bg-blue-600" />
                     </div>
                 </div>
             </div>
