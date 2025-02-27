@@ -37,20 +37,20 @@ function Home(){
             </div>
 
             <div>
-                <p className="font-inter-semi m-0 text-[25px] text-gray-700 mt-5">
+                <p className="font-inter-semi m-0 text-[18px] lg:text-[25px] text-gray-700 mt-5">
                     Olusola Ayomide - Software Engineer
                 </p>
-                <p className="font-inter-regular m-0 text-[15px] text-gray-700">
+                <p className="font-inter-regular text-[17px] lg:text-[15px] text-gray-700">
                 Crafting maintainable high quality Web and Mobile Apps
                 </p>
             </div>
 
             <div className="flex items-center justify-around mt-8 space-x-4">
-                <a className="bg-gray-700 hover:bg-gray-500 flex items-center py-2 px-2 rounded-lg text-white font-inter-regular" href="/contact">
+                <a className="bg-gray-700 hover:bg-gray-500 flex items-center py-1 lg:py-2 px-2 rounded-lg text-white font-inter-regular" href="/contact">
                     Let's talk
-                    <img className="w-5 h-5 ml-2" src="/send.png" alt="send" />
+                    <img className="w-4 h-4 lg:w-5 lg:h-5 ml-2" src="/send.png" alt="send" />
                 </a>
-                <a className="border border-gray-700 flex items-center py-2 px-2 rounded-lg text-gray-700 font-inter-regular" href="/portfolio">
+                <a className="border border-gray-700 flex items-center py-1 lg:py-2 px-2 rounded-lg text-gray-700 font-inter-regular" href="/portfolio">
                     View my work
                 </a>
             </div>
@@ -128,7 +128,7 @@ function Home(){
                     Testimonials
                 </p>
                 <div 
-                className="grid grid-cols-2 gap-6"
+                className="grid grid-cols-1 lg:grid-cols-2 gap-6"
                 >
                     {testimonial.map((item, _) => (
                         <div 

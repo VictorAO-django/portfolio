@@ -200,7 +200,7 @@ const Project: React.FC = () => {
     })
 
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    
     const nextSlide = () => {
         setCurrentIndex((prev) => (prev + 1) % (PROJECT?.screenshots?.length || 1));
     };

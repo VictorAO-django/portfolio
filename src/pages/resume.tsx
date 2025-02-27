@@ -71,9 +71,6 @@ function Resume(){
                                     Designed and implemented a scalable database schema using PostgreSQL for efficient storage and retrieval of large datasets related to products, orders and user information. 
                                 </li>
                                 <li className="text-start">
-                                    Designed and implemented a scalable database schema using PostgreSQL for efficient storage and retrieval of large datasets related to products, orders and user information. 
-                                </li>
-                                <li className="text-start">
                                     Collaborated with frontend developers to integrate RESTful APIs, ensuring smooth communication between front-end and back-end systems.
                                 </li>
                                 <li className="text-start">
